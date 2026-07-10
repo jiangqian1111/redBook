@@ -293,6 +293,24 @@ npm run build
 
 ---
 
+---
+
+## 📖 新手学习教程
+
+项目配套了 **5 章系统化教程**，适合初学者从零上手 Vue 3 全家桶：
+
+| 章节 | 内容 | 文件 |
+|------|------|------|
+| 第一章 | 项目起步与环境搭建（技术栈、目录结构、运行/打包） | [`docs/chapter1.md`](docs/chapter1.md) |
+| 第二章 | 移动端适配与样式布局（Viewport、Tailwind CSS、Flex 布局、瀑布流） | [`docs/chapter2.md`](docs/chapter2.md) |
+| 第三章 | 路由管理与页面导航（Vue Router、动态路由、导航守卫） | [`docs/chapter3.md`](docs/chapter3.md) |
+| 第四章 | Vue 3 核心概念与组件通信（ref/reactive、props/emit、Pinia、Composable） | [`docs/chapter4.md`](docs/chapter4.md) |
+| 第五章 | 业务逻辑实现与项目总结（瀑布流分页、Axios 封装、懒加载、优化方向） | [`docs/chapter5.md`](docs/chapter5.md) |
+
+> 💡 每章开头有「学习目标」，结尾有「本章小结」，结合项目实际代码讲解，适合边看边练。
+
+---
+
 ## 🤝 贡献指南
 
 欢迎提交 Issue 和 Pull Request！
