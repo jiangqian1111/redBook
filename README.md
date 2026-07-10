@@ -21,7 +21,7 @@
 </p>
 
 <p>
-  🖥️ <a href="https://jiangqian1111.github.io/redBook/"><b>在线演示（GitHub Pages）</b></a>
+  🖥️ <a href="https://kayce-jiang.github.io/redBook/"><b>在线演示（GitHub Pages）</b></a>
 </p>
 
 </div>
@@ -108,7 +108,7 @@
 
 ```bash
 # 1. 克隆项目
-git clone https://github.com/jiangqian1111/redBook.git
+git clone https://github.com/kayce-jiang/redBook.git
 cd redBook
 
 # 2. 安装依赖
@@ -289,7 +289,7 @@ npm run build
 # 将 dist/ 目录部署到任意静态服务器（Nginx / Vercel / Netlify 等）
 ```
 
-> 🖥️ 在线演示地址：`https://jiangqian1111.github.io/redBook/`
+> 🖥️ 在线演示地址：`https://kayce-jiang.github.io/redBook/`
 
 ---
 

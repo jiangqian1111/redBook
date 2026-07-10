@@ -178,7 +178,7 @@ export const getPostList = (category, page) => {
 ### 克隆并安装
 
 ```bash
-git clone https://github.com/jiangqian1111/redBook.git
+git clone https://github.com/kayce-jiang/redBook.git
 cd redBook
 npm install
 ```
