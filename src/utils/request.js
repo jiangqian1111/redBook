@@ -1,6 +1,7 @@
 //引入
 import axios from 'axios'
 import router from '@/router'
+import { setupClientMock } from '@/mock'
 
 //创建service实例
 const service = axios.create({
@@ -9,6 +10,12 @@ const service = axios.create({
   baseURL: import.meta.env.VITE_API_BASE_URL || '/api',
   timeout: 10000,
 })
+
+// 🏠 生产环境 Mock：构建部署后（GitHub Pages 等静态托管），
+// Vite 中间件不可用，启用 axios 拦截器在浏览器端返回数据
+if (import.meta.env.PROD) {
+  setupClientMock(service)
+}
 
 // request请求拦截器--Token 注入
 service.interceptors.request.use(
