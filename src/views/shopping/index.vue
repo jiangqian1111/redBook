@@ -4,7 +4,6 @@ import MallHeader from './MallHeader.vue'
 import CategoryBar from './CategoryBar.vue'
 import SubCategory from './SubCategory.vue'
 import ProductList from './ProductList.vue'
-import navBottom from '../navBottom.vue'
 
 // 引入你的 API 方法
 import { getCategoryList } from '@/api/categoryList'
@@ -81,6 +80,5 @@ const handleTabChange = (type) => {
       <ProductList :list="productList" />
     </main>
 
-    <navBottom />
   </div>
 </template>

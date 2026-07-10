@@ -57,9 +57,9 @@ const routes = [
     meta: { hideNav: true },
   },
   {
-    path: '/home',
-    name: 'home',
-    component: () => import('../views/home/home.vue'),
+    path: '/:pathMatch(.*)*',
+    name: 'NotFound',
+    component: () => import('@/views/NotFound.vue'),
   },
 ]
 

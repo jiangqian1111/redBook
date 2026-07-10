@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router' // 引入路由钩子
-import axios from 'axios'
+import { getChannelList } from '@/api/channelList'
 
 const router = useRouter()
 const route = useRoute()
@@ -12,10 +12,10 @@ const channelList = ref([])
 // 2. 获取频道数据
 const getChannels = async () => {
   try {
-    const res = await axios.get('http://127.0.0.1:4523/m1/7803650-7550608-default/channels')
+    const res = await getChannelList()
     channelList.value = res.data
 
-    console.log('9个频道获取成功:', channelList.value)
+    console.log('频道获取成功:', channelList.value)
 
     // 🌟 核心逻辑：自动跳转到第一个频道 🌟
     // 如果当前路径仅仅是 '/index' (没有后面的 /xxx)，且数据获取成功

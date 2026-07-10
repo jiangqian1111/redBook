@@ -1,11 +1,15 @@
 //引入
 import axios from 'axios'
 import router from '@/router'
+
 //创建service实例
 const service = axios.create({
-  baseURL: 'https://m1.apifoxmock.com/m1/7803650-7550608-default',
+  // 开发环境请求 /api/*，由 vite.config.js 中的 Mock 中间件拦截
+  // 生产环境请求真实后端，通过 .env 中的 VITE_API_BASE_URL 配置
+  baseURL: import.meta.env.VITE_API_BASE_URL || '/api',
   timeout: 10000,
 })
+
 // request请求拦截器--Token 注入
 service.interceptors.request.use(
   (config) => {
